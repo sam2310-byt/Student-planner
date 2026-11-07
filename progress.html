@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress | Student Study Planner</title>
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="progress.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <a class="logo" href="index.html"><img src="assets/logo.svg" alt="">Student Study Planner</a>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="tasks.html">My Tasks</a><a href="calendar.html">Calendar</a><a href="progress.html" class="active" aria-current="page">Progress</a><a href="about.html">About</a></nav>
+  </header>
+  <main id="main">
+<h1>My progress</h1><p>Keep track of completed assignments and upcoming work.</p>    <section class="summary" aria-label="Task summary">
+      <div><span>Total tasks</span><strong id="total">0</strong></div>
+      <div><span>To do</span><strong id="pending">0</strong></div>
+      <div><span>Completed</span><strong id="completed">0</strong></div>
+    </section>
+
+<section class="card"><h2>Overall completion</h2><progress id="progress-bar" max="100" value="0">0%</progress><p id="progress-text"></p></section><div class="calendar-layout section-gap"><section class="card"><h2>Progress by subject</h2><div id="subject-progress"></div></section><section class="card"><h2>Deadlines to check</h2><p id="deadline-summary"></p><a class="button" href="tasks.html">Review tasks</a></section></div>
+  </main>
+  <footer>
+    <p>Student Study Planner · Supporting SDG 4: Quality Education</p>
+    <p>Photos: <a href="https://images.unsplash.com/photo-1434030216411-0b793f4b4173">Study notes / Unsplash</a> · <a href="https://unsplash.com/photos/busy-library-reading-room-with-people-studying-PjpRF0LhBB8">Library / Unsplash</a></p>
+  </footer>
+</body>
+</html>

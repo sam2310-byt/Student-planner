@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar | Student Study Planner</title>
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="calendar.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <a class="logo" href="index.html"><img src="assets/logo.svg" alt="">Student Study Planner</a>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="tasks.html">My Tasks</a><a href="calendar.html" class="active" aria-current="page">Calendar</a><a href="progress.html">Progress</a><a href="about.html">About</a></nav>
+  </header>
+  <main id="main">
+<h1>Study calendar</h1><p>Select a day to see assignments due on that date.</p><div class="calendar-layout"><section class="card"><div class="month-controls"><button id="previous" aria-label="Previous month">←</button><h2 id="month"></h2><button id="next" aria-label="Next month">→</button></div><div class="weekdays"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div><div id="calendar-grid"></div></section><section class="card"><h2 id="day-title"></h2><div id="day-tasks"></div><a class="button" href="tasks.html">Add an assignment</a></section></div>
+  </main>
+  <footer>
+    <p>Student Study Planner · Supporting SDG 4: Quality Education</p>
+    <p>Photos: <a href="https://images.unsplash.com/photo-1434030216411-0b793f4b4173">Study notes / Unsplash</a> · <a href="https://unsplash.com/photos/busy-library-reading-room-with-people-studying-PjpRF0LhBB8">Library / Unsplash</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Student Study Planner</title>
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="home.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <a class="logo" href="index.html"><img src="assets/logo.svg" alt="">Student Study Planner</a>
+    <nav aria-label="Main navigation"><a href="index.html" class="active" aria-current="page">Home</a><a href="tasks.html">My Tasks</a><a href="calendar.html">Calendar</a><a href="progress.html">Progress</a><a href="about.html">About</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="home">
+      <div>
+        <p class="label">PLAN • STUDY • COMPLETE</p>
+        <h1>Organise your study.<br>Stay on track.</h1>
+        <p>Keep your assignments, subjects and deadlines in one place.</p>
+        <a class="button" href="tasks.html">Plan my tasks</a>
+      </div>
+      <img src="assets/study.jpg" alt="Student writing study notes beside a laptop">
+    </section>
+
+    <section class="summary" aria-label="Task summary">
+      <div><span>Total tasks</span><strong id="total">0</strong></div>
+      <div><span>To do</span><strong id="pending">0</strong></div>
+      <div><span>Completed</span><strong id="completed">0</strong></div>
+    </section>
+
+<section class="card"><h2>Upcoming assignments</h2><div id="upcoming"></div><a class="button" href="tasks.html">Manage my tasks</a></section>
+<section class="feature-grid"><article class="card"><h3>Plan your work</h3><p>Save your assignments with a subject, deadline and priority.</p><a href="tasks.html">Add a task →</a></article><article class="card"><h3>Check your month</h3><p>See which days have deadlines and plan your study time.</p><a href="calendar.html">Open calendar →</a></article><article class="card"><h3>Track progress</h3><p>See completed tasks and the work you still need to finish.</p><a href="progress.html">View progress →</a></article></section>
+  </main>
+  <footer>
+    <p>Student Study Planner · Supporting SDG 4: Quality Education</p>
+    <p>Photos: <a href="https://images.unsplash.com/photo-1434030216411-0b793f4b4173">Study notes / Unsplash</a> · <a href="https://unsplash.com/photos/busy-library-reading-room-with-people-studying-PjpRF0LhBB8">Library / Unsplash</a></p>
+  </footer>
+</body>
+</html>
